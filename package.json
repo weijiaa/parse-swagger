@@ -4,7 +4,7 @@
   "description": "swagger-spider ",
   "main": "index.js",
   "bin": {
-    "parse-swagger": "./index.js"
+    "parse-swagger": "node ./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
