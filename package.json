@@ -1,10 +1,10 @@
 {
   "name": "parse-swagger",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "swagger-spider ",
   "main": "index.js",
   "bin": {
-    "parse-swagger": "node ./index.js"
+    "parse-swagger": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
