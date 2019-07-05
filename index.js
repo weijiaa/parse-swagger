@@ -10,6 +10,7 @@ let outputPath = path.resolve(param[1] || '');
 
 if(!url) {
   console.log('usage: parse-swagger [url] [filePath]');
+  return void(0);
 };
 
 (async () => {
@@ -33,7 +34,9 @@ if(!url) {
         let item = $(e).children('.operations').children('.operation').children('.heading');
         let path = item.children('h3').children('.path').text().trim();
         let note = item.children('.options').children('li').children('a').text().trim();
-        let name = path.split('/')[path.split('/').length - 1];
+        let pathSplit = path.split('/');
+        let len = pathSplit.length;
+        let name = pathSplit[len - 3] + (function (name){return name.charAt(0).toUpperCase() + name.slice(1)})(pathSplit[len - 2]) + (function (name){return name.charAt(0).toUpperCase() + name.slice(1)})(pathSplit[len - 1]);
         items.push({ name, path, note });
       });
 
