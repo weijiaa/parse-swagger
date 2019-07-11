@@ -1,6 +1,6 @@
 {
   "name": "parse-swagger",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "swagger-spider ",
   "main": "index.js",
   "bin": {
@@ -22,8 +22,5 @@
   "bugs": {
     "url": "https://github.com/isweijia/parse-swagger/issues"
   },
-  "homepage": "https://github.com/isweijia/parse-swagger#readme",
-  "dependencies": {
-    "puppeteer": "^1.18.0"
-  }
+  "homepage": "https://github.com/isweijia/parse-swagger#readme"
 }
